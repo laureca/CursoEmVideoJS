@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Primeiros passo com DOM</title>
+
+        <style>
+            body {
+                background: #db0d30;
+                color: white;
+                font: normal 10pt Arial;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Iniciando os estudos de DOM</h1>
+        <p>O resultado vai aqui</p>
+        <p>Aprendendo a usar o <strong>DOM</strong> em JS</p>
+        <div>Clique em mim</div>
+
+        <script>
+            var p1 = document.getElementsByTagName('p')[1]//dentro de colchete é o index da tag
+            document.write(p1.innerText)
+
+            corpo = document.body
+            corpo.style.background = 'black'
+
+            div = document.getElementsByTagName('div')[0]
+            div.style.background = 'green'
+            div.innerText = 'Eu sou linda'
+
+            h1 = document.querySelector('h1')
+            h1.style.background = 'blue'
+        </script>
+    </body>
+</html>
